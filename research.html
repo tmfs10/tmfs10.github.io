@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Sid Jain's research</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Sid Jain</a>
+        </div>
+	<nav class='navbar-collapse collapse'>
+          <ul class='nav navbar-nav'>
+            <li>
+              <a href='research.html'>Research</a>
+            </li>
+            <li>
+              <a href='publications.html'>Publications</a>
+            </li>
+            <li>
+              <a href='teaching.html'>Teaching</a>
+            </li>
+            <li>
+              <a href='contact.html'>Contact</a>
+            </li>
+            <li>
+              <a href='files/sid_cv.pdf'>CV</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class='header-jumbo'>
+          <h1>Research</h1>
+          <ul class='list-inline'>
+            <li>
+              <a href='#timepath'>
+                <span class='glyphicon glyphicon-circle-arrow-down'></span>
+                Reconstructing temporal progression of signaling pathways
+              </a>
+            </li>
+            <li>
+              <a href='#multitask'>
+                <span class='glyphicon glyphicon-circle-arrow-down'></span>
+                Multitask learning of signaling and regulatory networks
+              </a>
+            </li>
+            <li>
+              <a href='#ipheuristics'>
+                <span class='glyphicon glyphicon-circle-arrow-down'></span>
+                Heuristics for Mixed Integer Programming
+              </a>
+            </li>
+            <li>
+              <a href='#lnsdialaride'>
+                <span class='glyphicon glyphicon-circle-arrow-down'></span>
+                Large neighborhood search for Dial-a-ride problem
+              </a>
+            </li>
+            <li>
+              <a href='#clauselearning'>
+                <span class='glyphicon glyphicon-circle-arrow-down'></span>
+                Clause Learning for Constraint Programs
+              </a>
+            </li>
+            <li>
+              <a href='#solutioncounting'>
+                <span class='glyphicon glyphicon-circle-arrow-down'></span>
+                Solution counting
+              </a>
+            </li>
+            <li>
+              <a href='#failurerecovery'>
+                <span class='glyphicon glyphicon-circle-arrow-down'></span>
+                Automated Failure Recovery
+              </a>
+            </li>
+          </ul>
+        </div>
+      <!-- Example row of columns -->
+
+      <hr class='featurette-divider'>
+      <a name='timepath'></a>
+      <div class="row featurette">
+        <div class="col-md-8">
+	  <h2 class='featurette-heading'>Reconstructing temporal progression of signaling pathways</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+	  <p>
+	  A stimulant (like a virus) to a cell can interact with proteins in the cell and cause a cascade of signaling pathways that activate/repress the expression of genes downstream. The differential expression of such genes can cause further signaling cascades that cause the differential expression of another set of genes. While the gene expression at different time points can be observed, it is not possible to directly observe the signaling pathways responsible for their differential expression. We developed a tool, <a href="http://sb.cs.cmu.edu/timepath">TimePath</a>, to learn the progression of such signaling pathways across time based on time series gene expression data and protein-protein interaction data. The paper is currently under submission.
+	  </p>
+        </div>
+      </div>
+
+      <hr class='featurette-divider'>
+      <a name='multitask'></a>
+      <div class="row featurette">
+        <div class="col-md-8">
+	  <h2 class='featurette-heading'>Multitask learning of signaling and regulatory networks</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+	  <p>
+	  We developed a tool, <a href="http://sb.cs.cmu.edu/mtsdrem">MT-SDREM</a>, to jointly learn signaling pathways and regulatory networks using time series gene expression data from multiple related conditions, TF-gene interaction data, and a protein-protein signaling network. Our tool built on an existing tool called SDREM which learnt the signaling pathways and regulatory network for just a single condition. For joint learning, we shared information the following information :- (1) we ensured that the condition-specific networks learnt were consistent – i.e. the edge directions were the same for all networks (2) If a TF was predicted to regulate more than one condition, it’s prior for regulating any condition was increased. Validation with respect to RNAi screen hits, GO analysis and manual examination of the predicted signaling proteins demonstrated the advantage of joint inference. Read more about it <a href="http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003943">here</a>.
+	  </p>
+        </div>
+      </div>
+
+      <hr class='featurette-divider'>
+      <a name='ipheuristics'></a>
+      <div class="row featurette">
+        <div class="col-md-8">
+	  <h2 class='featurette-heading'>Heuristics for Mixed Integer Programming</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+	  <p>
+	   We programmed a Mixed Integer programming solver from scratch (using existing LP solvers) and experimented with various node selection and branching heuristics with application to the Warehouse Location problem. 
+	  </p>
+        </div>
+      </div>
+
+      <hr class='featurette-divider'>
+      <a name='lnsdialaride'></a>
+      <div class="row featurette">
+        <div class="col-md-8">
+	  <h2 class='featurette-heading'>Large neighborhood search for Dial-a-ride problem</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+			The Dial-a-ride problem involves a set of passengers that have to be picked up and dropped off at various locations within certain time windows. We developed an algorithm for this problem that was able to obtain close to optimal solutions much more quickly than the state of the art algorithms while still being able to prove if the problem was infeasible – something that most other algorithms did not do. Read more about it <a href="papers/2011/darp.pdf">here</a></p>
+        </div>
+      </div>
+
+      <hr class='featurette-divider'>
+      <a name='clauselearning'></a>
+      <div class="row featurette">
+        <div class="col-md-8">
+	  <h2 class='featurette-heading'>Clause Learning for Constraint Programs</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+			Redundant clause learning is a popular technique used by SAT solvers to speed up search for a solution or proof of infeasibility for a boolean formula. We developed an algorithm to effectively learn clauses for a class of problems called multi-valued satisfiability problems which are a generalization of boolean formulas. Experimental results showed that our algorithm was several times faster than the standard technique of simply converting the multi-valued formula into its boolean equivalent. Read more about it <a href="papers/2010/cmvsat.pdf">here</a> and <a href="papers/2011/cmvsat_aaai11.pdf">here</a>. </p>
+        </div>
+      </div>
+
+      <hr class='featurette-divider'>
+      <a name='solutioncounting'></a>
+      <div class="row featurette">
+        <div class="col-md-8">
+	  <h2 class='featurette-heading'>Solution Counting</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+			Solution counting for integer programs with only binary variables is a #P-complete problem. The motivation for this project was that several good techniques for lower bounding the number of solutions for such problems had been developed but the only non-trivial upper bounding technique was extremely slow (in fact, in experiments with the benchmarks we were looking at, it always timed out). We developed an upper bounding technique based on dynamic programming that was able to obtain non-trivial upper bounds much faster for several problems. Read more about it <a href="papers/2010/solution_counting.pdf">here</a>
+	  </p>
+        </div>
+      </div>
+
+      <hr class='featurette-divider'>
+      <a name='failurerecovery'></a>
+      <div class="row featurette">
+        <div class="col-md-8">
+	  <h2 class='featurette-heading'>Automated Failure Recovery</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+We examined a programming language abstraction called Stabilizers which had been developed for Concurrent ML for automatically recovering from failures in program execution. We wrote a Javascript library for doing the equivalent for web applications (a use case would be if the network connection suddenly died).
+	  </p>
+        </div>
+      </div>
+
+
+      <footer>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

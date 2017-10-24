@@ -68,6 +68,12 @@
           <h1>Research</h1>
           <ul class='list-inline'>
             <li>
+              <a href='#scrnaseq'>
+                <span class='glyphicon glyphicon-circle-arrow-down'></span>
+               Using Neural Networks for Reducing the Dimensions of Single-Cell RNA-Seq Data
+              </a>
+            </li>
+            <li>
               <a href='#timepath'>
                 <span class='glyphicon glyphicon-circle-arrow-down'></span>
                 Reconstructing temporal progression of signaling pathways
@@ -114,6 +120,42 @@
       <!-- Example row of columns -->
 
       <hr class='featurette-divider'>
+      <a name='scrnaseq'></a>
+      <div class="row featurette">
+        <div class="col-md-8">
+	  <h2 class='featurette-heading'>Using Neural Networks for Reducing the Dimensions of Single-Cell RNA-Seq Data</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+	  <p>
+	  While only recently developed, the ability to profile expression
+	  data in single cells (scRNA-Seq) has already led to several
+	  important studies and findings. However, this technology has also
+	  raised several new computational challenges. These include
+	  questions about the best methods for clustering scRNA-Seq data,
+	  how to identify unique group of cells in such experiments, and how
+	  to determine the state or function of specific cells based on
+	  their expression profile. To address these issues we develop and
+	  test a method based on neural networks (NN) for the analysis and
+	  retrieval of single cell RNA-Seq data. We tested various NN
+	  architectures, some of which incorporate prior biological
+	  knowledge, and used these to obtain a reduced dimension
+	  representation of the single cell expression data. We show that
+	  the NN method improves upon prior methods in both, the ability to
+	  correctly group cells in experiments not used in the training and
+	  the ability to correctly infer cell type or state by querying a
+	  database of tens of thousands of single cell profiles. Such
+	  database queries (which can be performed using our web server)
+	  will enable researchers to better characterize cells when
+	  analyzing heterogeneous scRNA-Seq samples. Read more about it <a
+			 href="https://academic.oup.com/nar/article/4056711/Using-neural-networks-for-reducing-the-dimensions">here</a>
+	  </p>
+        </div>
+      </div>
+
+
+      <hr class='featurette-divider'>
       <a name='timepath'></a>
       <div class="row featurette">
         <div class="col-md-8">
@@ -123,7 +165,23 @@
       <div class="row">
         <div class="col-md-8">
 	  <p>
-	  A stimulant (like a virus) to a cell can interact with proteins in the cell and cause a cascade of signaling pathways that activate/repress the expression of genes downstream. The differential expression of such genes can cause further signaling cascades that cause the differential expression of another set of genes. While the gene expression at different time points can be observed, it is not possible to directly observe the signaling pathways responsible for their differential expression. We developed a tool, <a href="http://sb.cs.cmu.edu/timepath">TimePath</a>, to learn the progression of such signaling pathways across time based on time series gene expression data and protein-protein interaction data. The paper is currently under submission.
+	  A stimulant (like a virus) to a cell can interact with proteins in
+	  the cell and cause a cascade of signaling pathways that
+	  activate/repress the expression of genes downstream. The
+	  differential expression of such genes can cause further signaling
+	  cascades that cause the differential expression of another set of
+	  genes. While the gene expression at different time points can be
+	  observed, it is not possible to directly observe the signaling
+	  pathways responsible for their differential expression. We
+	  developed a tool, <a
+	  href="http://sb.cs.cmu.edu/timepath">TimePath</a>, to learn the
+  progression of such signaling pathways across time based on time
+  series gene expression data and protein-protein interaction data. Read
+  more about it <a
+   href="http://bioinformatics.oxfordjournals.org/content/32/12/i253.abstract">here</a>.
+   We applied the tool to analysis of HIV-1 dementia which you can read
+   about <a
+   href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5389669/">here</a>.
 	  </p>
         </div>
       </div>

@@ -1,0 +1,108 @@
+ .----------------.  .----------------.  .----------------.  .----------------.  .----------------. 
+| .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |
+| |  ________    | || |  _______     | || |  _________   | || | ____    ____ | || |  ____  ____  | |
+| | |_   ___ `.  | || | |_   __ \    | || | |_   ___  |  | || ||_   \  /   _|| || | |_  _||_  _| | |
+| |   | |   `. \ | || |   | |__) |   | || |   | |_  \_|  | || |  |   \/   |  | || |   \ \  / /   | |
+| |   | |    | | | || |   |  __ /    | || |   |  _|  _   | || |  | |\  /| |  | || |    > `' <    | |
+| |  _| |___.' / | || |  _| |  \ \_  | || |  _| |___/ |  | || | _| |_\/_| |_ | || |  _/ /'`\ \_  | |
+| | |________.'  | || | |____| |___| | || | |_________|  | || ||_____||_____|| || | |____||____| | |
+| |              | || |              | || |              | || |              | || |              | |
+| '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |
+ '----------------'  '----------------'  '----------------'  '----------------'  '----------------'
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Note: 																																					  			
+If nothing happens after a clicking, please pay attention to the top right.  The content might be blocked by the browser. Please allow the pop-ups. 
+																																						  		
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+1. Global Config Panel
+RESET: Rest all configurations;
+First Slider: Use the first slider to zoom in/out the figure. 
+Set background: Change the background color. 
+Enable/Disable Mouseover popup: Enable/disable the mouseover to show the regulators.
+Second Slider: Choose # of top TFs [10-100] to display on mouseover. 
+
+--------------------------
+Click:  Choose the function for left click the node. 
+Function List:
+
+TF: show Top TFs for the clicked node (regulating the edge ending at the node). 
+Average Methylation  For Genes In Node: show the average methylation score for all genes in the clicked node. 
+Average Methylation For Target Genes Of Top TFs Of the Node: show the average methylation score for the target genes of the top TFs associated to the clicked node. 
+Compare TF: Compare predicted TFs under different models (using Methylation/Proteomics vs Proteomics only vs none)
+Genes Assigned To The Node: show the gene list assigned to the node/path.  (The genes in the path are the same as the genes in the leaf node of the path.)
+Methylation Statistics: Show the impact of methylation to the ranking of the predicted TFs.
+Single Cells: Show the overlapping comparison between the clicked node and all cell types from the single cell dataset. 
+Sorted Cells: Show the overlapping comparison between the clicked node and all cell types from the sorted cell dataset. 
+
+-----------------------------
+Shift-click: Choose the function for shift-click the node.
+ToppGene: functional analysis using Toppgene.
+PANTHER: functional analysis using PANTHER.
+
+
+2. Regulator Panel
+Explore Regulator:  Type in Regulator Name (TF/miRNA) to search the regulating paths/Edges (Marked in Blue).
+Regulator rank cutoff: The ranking (from 10-100) cutoff used to determine whether the TF/miRNA is regulating the corresponding Edge/node.
+To undo the search: delete the text and then press enter; or hit the RESET button.
+You can also use the DropDown menu to search the regulator (TF/miRNA) under current cutoff. 
+
+3. Expression Panel
+Show Path Expression: Click to show the expression pattern for each path.  (You can highlight the path you are interested in by clicking it).
+
+Explore Gene: Type in Gene Name to show the assigned nodes/paths (Marked in Red);
+	The expression (log2 expression relative to time 0) is also provided;
+	To undo the search: delete the text and then press enter; or hit the RESET button.
+Explore miRNA: Type in miRNA name to show the expression of miRNAs
+Explore Gene/miRNA absolute expression: The above expression is the relative expression to 0. Those low/zero variance genes were removed from our analysis.
+(e.g. SOX3, it has all zero expression across all time points, You can use the absolute search to find the expression of those genes/miRNAs). 
+
+
+4. Methylation Panel
+Explore gene methylation: Plot the methylation scores for given gene. 0: no methylation peaks were found within 10kb upstream of the gene. 
+Explore Regulator Methylation: Plot the methylation scores for all targets of given TF. (You can even choose the node you are interested in)
+Explore the methylation difference: List all genes (miRNAs) with methylation significantly different in specified two time points. 
+View methylation track in UCSC genome browser:  Visualize the methylation data using UCSC genome browser 
+The data was stored at: http://jund.andrew.cmu.edu:8080/dremx_methylation_data/
+
+
+5. Cell type Panel
+Explore Single Cell Type: highlight all nodes, which are significantly overlapping with signature genes associated to a specific cell type (based on single cell data)
+Explore Sorted Cell Type: highlight all nodes, which are significantly overlapping with signature genes associated to a specific cell type (based on sorted cell data)
+
+
+6. Path Function Panel
+
+This plots the Sankey diagram to show the function and regulation associated to each path.
+Mouseover to show tooltip. 
+Click to show the details (Table). 
+
+Use the regulator rank slider in regulator section to choose the cutoff for the regulators shown in Sankey diagram. 
+Use GO term rank cutoff slider to choose the cutoff for GO terms in Sankey diagram. 
+
+7. Omnibus panel 
+Key in the Gene(Regulator) name to search all related  expression and methylation. 
+
+
+8. Figure Section 
+
+(1) Shift Click to perform the functional analysis
+
+shift+ Click Node: Perform functional analysis (might be slow, please wait);
+Choose the dropdown menu accordingly to select PANTHER analysis or Toppgene analysis. 
+
+For PAHTER:  
+Please choose the annotation dataset and click launch analysis. 
+
+For Toppgene: 
+Please click the start Button on Toppgene web-server to start the analysis. 
+
+(2) Click to show the corresponding information as described in Global config section. 
+
+
+
+
+
